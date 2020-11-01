@@ -256,9 +256,11 @@ figcaption {
 }
 
 /* section contact */
-.contact {
-  height: 60vh;
-  position: relative;
+.section-contact {
+  padding-bottom: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .contact-methods {
@@ -279,21 +281,33 @@ figcaption {
   color: var(--hover-color);
 }
 
-.btn-cv {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 100px;
+.container-btn-cv {
   background-color: white;
   border-radius: 5px;
   padding: 10px;
-  color: black;
-  text-decoration: none;
-  font-size: 3rem;
+  width: 50%;
+  max-width: 700px;
+  margin: auto;
+  margin-top: 100px;
+  position: relative;
 }
 
-.btn-cv:hover {
+.container-btn-cv:hover {
   background-color: #c8f9dd;
+  cursor: pointer;
+}
+
+.container-btn-cv p {
+  text-align: center;
+}
+
+.btn-cv {
+  /*   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 100px; */
+  color: black;
+  font-size: 3rem;
 }
 
 /* cyclez */
