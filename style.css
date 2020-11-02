@@ -47,6 +47,7 @@ html {
 .input-switch {
   opacity: 0;
   position: absolute;
+  z-index: -1;
 }
 
 .theme-switch {
@@ -144,6 +145,7 @@ html {
   left: 50%;
   transform: translateX(-50%);
   font-size: 2rem;
+  color: var(--heading-color);
 }
 .accueil .scroll-indicator span {
   position: absolute;
