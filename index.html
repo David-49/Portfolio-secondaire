@@ -39,15 +39,22 @@
     <section class="accueil">
       <header class="header">
         <a href="./" class="signature">DAVID DOGNIN</a>
+
         <nav class="nav">
+          <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox" id="label-btn">
+              🌞
+            </label>
+            <input type="checkbox" id="checkbox" class="input-switch" />
+          </div>
           <ul class="list-menu">
-            <a href="#section-competences"
-              ><li class="element-menu">Compétences</li></a
-            >
-            <a href="#section-projets"><li class="element-menu">Projets</li></a>
-            <a href="#section-contact"
-              ><li class="element-menu">Me contacter</li></a
-            >
+            <li class="element-menu">
+              <a href="#section-competences">Compétences</a>
+            </li>
+            <li class="element-menu"><a href="#section-projets">Projets</a></li>
+            <li class="element-menu">
+              <a href="#section-contact">Me contacter</a>
+            </li>
           </ul>
         </nav>
       </header>
@@ -64,9 +71,10 @@
         </div>
 
         <img
-          src="./img/illustration/undraw_programming_2svr copie.svg"
+          src="./img/illustration/illustration-accueil-dark-theme.svg"
           alt=""
           class="illustration-accueil"
+          id="illustration-dev"
         />
       </div>
       <div class="scroll-indicator">
@@ -253,5 +261,6 @@
         </p>
       </div>
     </section>
+    <script src="./app.js"></script>
   </body>
 </html>
