@@ -2,12 +2,14 @@ const toggleSwitch = document.querySelector("#checkbox");
 
 const labelBtn = document.querySelector("#label-btn");
 
-const illustrationDev = document.querySelector("#illustration-dev");
-
 const urlPage = window.location.href;
 const urlStatus = urlPage.substring(urlPage.lastIndexOf("/") + 1);
 
+console.log(urlStatus);
+
 if (urlStatus === "") {
+  console.log("ok" + urlStatus);
+  const illustrationDev = document.querySelector("#illustration-dev");
   function switchTheme(e) {
     if (e.target.checked) {
       labelBtn.textContent = "🌑";
@@ -61,6 +63,9 @@ if (urlStatus === "") {
     if (currentTheme === "light") {
       toggleSwitch.checked = true;
     }
+    if (currentTheme === "dark") {
+      toggleSwitch.checked = false;
+    }
   }
 } else {
   function switchTheme(e) {
@@ -68,7 +73,6 @@ if (urlStatus === "") {
       labelBtn.textContent = "🌑";
       document.documentElement.setAttribute("data-theme", "light");
       localStorage.setItem("label", "🌑");
-
       localStorage.setItem("theme", "light");
     } else {
       labelBtn.textContent = "🌞";
