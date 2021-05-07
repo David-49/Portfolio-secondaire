@@ -1,0 +1,25 @@
+{
+  "name": "Portfolio-secondaire",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "build:css": "tailwind build src/tailwind.css -o dist/style/tailwind.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/David-49/Portfolio-secondaire.git"
+  },
+  "keywords": [],
+  "author": "David Dognin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/David-49/Portfolio-secondaire/issues"
+  },
+  "homepage": "https://github.com/David-49/Portfolio-secondaire#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "tailwindcss": "^2.1.2",
+    "tailwindcss-typography": "^2.2.0"
+  }
+}

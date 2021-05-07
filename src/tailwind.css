@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h2 {
+    @apply text-light-headingColor dark:text-dark-headingColor;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .title-section {
+    @apply text-center text-6xl mt-36 mb-28;
+  }
+  .body {
+    @apply font-main overflow-x-hidden bg-light-bgColor dark:bg-dark-bgColor;
+  }
+  .header {
+    @apply w-full border-light-primary border-4 flex justify-between dark:border-dark-primary;
+  }
+  .signature {
+    @apply text-3xl self-center ml-5 whitespace-nowrap text-light-headingColor dark:text-dark-headingColor;
+  }
+  .nav {
+    @apply flex relative;
+  }
+
+  .theme-switch-wrapper {
+    @apply relative flex items-center;
+  }
+  .theme-switch {
+    @apply text-2xl cursor-pointer;
+  }
+
+  .input-switch {
+    @apply opacity-0 absolute -z-1;
+  }
+
+  .list-menu {
+    @apply flex items-center;
+  }
+
+  .link-menu {
+    @apply text-light-headingColor hover:text-light-hoverColor dark:text-dark-headingColor dark:hover:text-dark-hoverColor;
+  }
+
+  .element-menu {
+    @apply p-5 text-xl cursor-pointer;
+  }
+
+  .span-scroll-logo {
+    @apply absolute w-6 h-6 left-2/4 -ml-3 border-l-2 border-b-2 border-light-primary dark:border-dark-primary transform -rotate-45 animate-scrollDown opacity-0 box-border;
+  }
+  .contain-logo {
+    @apply w-44 h-44 bg-white rounded-3xl justify-self-center p-5 flex flex-col items-center m-3;
+  }
+
+  .logo-web-tech {
+    @apply w-3/4;
+  }
+
+  .projet {
+    @apply w-11/12 relative justify-self-center;
+  }
+  .overlay {
+    @apply absolute top-0 bottom-0 left-0 right-0 h-full w-full z-40 opacity-0 transition duration-300 ease-in bg-light-overlayColor dark:bg-dark-overlayColor;
+  }
+
+  .bloc-desc {
+    @apply text-3xl absolute z-50 top-2/4 left-2/4 text-center transform -translate-x-2/4 -translate-y-2/4 w-10/12 text-white;
+  }
+
+  /******************************************************/
+  /*******************Page projet************************/
+  /******************************************************/
+
+  .page-projet {
+    @apply pb-24;
+  }
+
+  .container-img {
+    @apply w-full h-500;
+  }
+
+  .img {
+    @apply w-full h-full object-cover object-top;
+  }
+
+  .title-project {
+    @apply uppercase text-9xl ml-12 leading-relaxed;
+  }
+
+  .container-presentation {
+    @apply grid mx-12 gap-20;
+  }
+
+  .content-presentation {
+    @apply text-3xl mb-5 text-light-content dark:text-dark-content;
+  }
+
+  .title-info-sup {
+    @apply text-4xl mb-10 whitespace-nowrap;
+  }
+
+  .title-techno-used {
+    @apply text-2xl mb-4 text-light-content dark:text-dark-content;
+  }
+
+  .container-logo-tech {
+    @apply flex justify-between text-light-headingColor dark:text-dark-headingColor;
+  }
+
+  .devicon {
+    @apply text-5xl;
+  }
+
+  .info-sup p,
+  .info-sup p a {
+    @apply text-xl mt-9 text-light-primary dark:text-dark-primary;
+  }
+
+  .info-sup p a:hover {
+    text-decoration: underline wavy theme(colors.light.primary);
+  }
+
+  .info-sup p span {
+    @apply text-light-content dark:text-dark-content;
+  }
+}
+
+@layer utilities {
+  .animation-delay-span-1 {
+    animation-delay: 0ms;
+  }
+
+  .animation-delay-span-2 {
+    animation-delay: 150ms;
+  }
+
+  .animation-delay-span-3 {
+    animation-delay: 300ms;
+  }
+
+  .projet:hover .overlay {
+    opacity: 1;
+  }
+  .underline-wavy {
+    text-decoration: wavy underline theme(colors.light.primary);
+  }
+
+  .underline-wavy-dark {
+    text-decoration: wavy underline theme(colors.dark.primary);
+  }
+}
